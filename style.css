@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url(./assets/fonts/static/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url(./assets/fonts/static/Inter-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 800;
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf) format('truetype');
+}
+
+:root {
+    /* Primary */
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    /* Neutral */
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 20px 10vw 50px 10vw;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+
+    width: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+nav a:hover {
+    color: var(--soft-red);
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-height: 30%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left */
+main section {
+    width: 65%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main section img {
+    width: 100%;
+    max-height: 45%;
+
+    padding-bottom: 20px;
+}
+
+main section div {
+    width: 100%;
+    min-height: 150px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main section div h1 {
+    font-weight: 800;
+    font-size: 50px;
+
+    width: 45%;
+    min-height: 100%;
+}
+
+main section div aside {
+    width: 50%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main section div aside p {
+    color: var(--dark-grayish-blue);
+}
+
+main section div aside a {
+    text-decoration: none;
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    
+    background-color: var(--soft-red);
+
+    width: 40%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div aside a:hover {
+    background-color: var(--very-dark-blue);
+}
+
+/* right */
+main>aside {
+    width: 32%;
+    min-height: 100%;
+
+    padding: 0 1%;
+
+    background-color: var(--very-dark-blue);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main>aside h1 {
+    font-weight: 700;
+    color: var(--soft-orange);
+    font-size: 35px;
+}
+
+main>aside div {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main>aside div a {
+    text-decoration: none;
+    color: var(--off-white);
+    font-weight: 700;
+}
+
+main>aside div a:hover {
+    color: var(--soft-orange);
+}
+
+main>aside div p {
+    color: var(--dark-grayish-blue);
+}
+
+main aside hr {
+    border: none;
+
+    height: 1px;
+
+    background-color: var(--dark-grayish-blue);
+}
+
+/* Bottom */
+body>div {
+    width: 100%;
+    height: 125px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+body>div article {
+    width: 25%;
+    max-height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+body>div article img {
+    width: auto;
+    height: 100%;
+}
+
+body>div article div {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body>div article div h1 {
+    color: var(--grayish-blue);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+body>div article div a {
+    text-decoration: none;
+    color: var(--very-dark-blue);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+body>div article div a:hover {
+    color: var(--soft-red);
+}
+
+body>div article div p {
+    color: var(--dark-grayish-blue);
+}
