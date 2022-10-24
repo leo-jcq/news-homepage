@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/leo-jcq/news-homepage](https://github.com/leo-jcq/news-homepage)
-- Live Site URL: [https://leo-jcq.github.io/new-homepage/](https://leo-jcq.github.io/new-homepage/)
+- Live Site URL: [https://leo-jcq.github.io/news-homepage/](https://leo-jcq.github.io/news-homepage/)
 
 ## My process
 
